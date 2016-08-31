@@ -28,6 +28,6 @@ defmodule MuScraper do
    def google_play_link(song) do
       title = Regex.replace(~r/\s/, song.title, "+")
       artist = Regex.replace(~r/\s/, song.artist, "+")
-      "https://play.google.com/music/listen?u=0#/sr/#{title}+##{artist}" 
+      "https://play.google.com/music/listen?u=0#/sr/#{title}+#{artist}" 
    end
 end
